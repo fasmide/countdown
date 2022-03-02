@@ -80,6 +80,7 @@ func run(w *app.Window, d time.Duration) error {
 			}
 			if e.Name == "R" {
 				end = time.Now().Truncate(time.Second).Add(d)
+				w.Invalidate()
 			}
 		}
 	}
